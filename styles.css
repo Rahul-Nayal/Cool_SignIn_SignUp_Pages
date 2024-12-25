@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    overflow-x: hidden;
+    background-color:black;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  #logo-btn {
+    /* background-color: white; */
+    background:transparent;
+    border: none;
+    font-size: 16px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px 15px;
+    color: white;
+    
+    /* left: 0; */
+
+    /* top:-10%; */
+    /* position: absolute; */
+  }
+  
+  .menu-items {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .menu-item a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 16px;
+    opacity: 0.7;
+  }
+  
+  .menu-item button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+  }
+  
+  .menu-item button a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .menu-item a:hover, .menu-item button:hover {
+    opacity: 1;
+  }
+  
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  
+  .circle {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.2;
+  }
+  
+  .circle1 {
+    width: 60vw;
+    height: 60vw;
+    background-color: rgba(241, 118, 112, 0.3);
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .circle2 {
+    width: 70vw;
+    height: 70vw;
+    background-color: rgba(241, 118, 112, 0.3);
+    top: 60%;
+    left: 20%;
+    transform: translateX(-20%);
+  }
+  
+  .title-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #e0efff;
+  }
+  
+  .title-area .don-t-miss-out {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .title-area .add-a-little-extra {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .title-area .button {
+    background-color: #0071e3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .title-area .rectangle {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+        flex-wrap: wrap;
+    }
+  
+    .menu-items {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+  
+    .circle1, .circle2 {
+        display: none;
+    }
+  
+    .title-area {
+        padding: 50px 10px;
+    }
+  
+    .title-area .don-t-miss-out {
+        font-size: 2rem;
+    }
+  
+    .title-area .add-a-little-extra {
+        font-size: 1rem;
+    }
+  }
